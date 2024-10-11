@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chess Learning Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Chess Learning Game</h1>
+
+    <!-- Game Board -->
+    <div id="board-container">
+        <div id="board"></div>
+    </div>
+
+    <!-- Game Controls -->
+    <div id="controls">
+        <button id="start-tutorial">Start Tutorial</button>
+        <button id="ai-move">AI Move</button>
+        <button id="load-checkmate-scenario">Load Checkmate Scenario</button>
+        <button id="load-fork-scenario">Load Fork Scenario</button>
+    </div>
+
+    <!-- Customization -->
+    <label for="board-color">Board Color:</label>
+    <input type="color" id="board-color" name="board-color" value="#ffffff">
+
+    <!-- AI Difficulty -->
+    <label for="difficulty">AI Difficulty:</label>
+    <button id="easy">Easy</button>
+    <button id="medium">Medium</button>
+    <button id="hard">Hard</button>
+
+    <!-- Score -->
+    <div id="score"></div>
+
+    <!-- Tutorial Message -->
+    <div id="tutorial-message"></div>
+
+    <!-- Scenario Message -->
+    <div id="scenario-message"></div>
+
+    <!-- Audio -->
+    <audio id="move-sound" src="move.mp3" preload="auto"></audio>
+
+    <!-- JavaScript File -->
+    <script src="script.js"></script>
+</body>
+</html>
